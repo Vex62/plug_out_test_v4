@@ -1,4 +1,4 @@
-package com.example.plug_out_test_v4.ui.notifications;
+package com.example.plug_out_test_v4.ui.overlay;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.plug_out_test_v4.databinding.FragmentNotificationsBinding;
 
-public class NotificationsFragment extends Fragment {
+public class OverlayFragment extends Fragment {
 
     private FragmentNotificationsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        OverlayViewModel overlayViewModel =
+                new ViewModelProvider(this).get(OverlayViewModel.class);
 
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        overlayViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
