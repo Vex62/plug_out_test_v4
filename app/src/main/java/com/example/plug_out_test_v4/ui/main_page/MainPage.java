@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.plug_out_test_v4.databinding.FragmentHomeBinding;
+import com.example.plug_out_test_v4.databinding.FragmentMainPageBinding;
 
 public class MainPage extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentMainPageBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         MainPageViewModel mainPageViewModel =
                 new ViewModelProvider(this).get(MainPageViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentMainPageBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
