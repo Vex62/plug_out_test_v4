@@ -1,14 +1,14 @@
-package com.example.plug_out_test_v4.ui.home;
+package com.example.plug_out_test_v4.ui.main_page;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class MainPageViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public MainPageViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }

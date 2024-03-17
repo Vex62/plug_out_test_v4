@@ -1,4 +1,4 @@
-package com.example.plug_out_test_v4.ui.home;
+package com.example.plug_out_test_v4.ui.main_page;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.plug_out_test_v4.databinding.FragmentHomeBinding;
 
-public class HomeFragment extends Fragment {
+public class MainPage extends Fragment {
 
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        MainPageViewModel mainPageViewModel =
+                new ViewModelProvider(this).get(MainPageViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        mainPageViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

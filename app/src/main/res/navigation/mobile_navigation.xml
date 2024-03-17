@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.plug_out_test_v4.ui.home.HomeFragment"
+        android:name="com.example.plug_out_test_v4.ui.main_page.MainPage"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
