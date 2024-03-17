@@ -1,4 +1,4 @@
-package com.example.plug_out_test_v4.ui.dashboard;
+package com.example.plug_out_test_v4.ui.select_apps;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,20 +12,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.plug_out_test_v4.databinding.FragmentDashboardBinding;
 
-public class DashboardFragment extends Fragment {
+public class SelectAppsFragment extends Fragment {
 
     private FragmentDashboardBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        SelectAppsViewModel selectAppsViewModel =
+                new ViewModelProvider(this).get(SelectAppsViewModel.class);
 
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        selectAppsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
