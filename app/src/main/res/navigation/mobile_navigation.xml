@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_main_page">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_main_page"
         android:name="com.example.plug_out_test_v4.ui.main_page.MainPage"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_main_page" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
