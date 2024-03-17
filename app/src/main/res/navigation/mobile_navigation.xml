@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_select_apps"
         android:name="com.example.plug_out_test_v4.ui.select_apps.SelectAppsFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/title_select_apps"
+        tools:layout="@layout/fragment_select_apps" />
 
     <fragment
         android:id="@+id/navigation_notifications"
