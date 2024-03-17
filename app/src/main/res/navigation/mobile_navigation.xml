@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_select_apps" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_overlay"
         android:name="com.example.plug_out_test_v4.ui.overlay.OverlayFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:label="@string/title_overlay"
+        tools:layout="@layout/fragment_overlay" />
 </navigation>

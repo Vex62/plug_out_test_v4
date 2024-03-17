@@ -2,5 +2,5 @@
     <string name="app_name">plug_out_test_v4</string>
     <string name="title_home">Home</string>
     <string name="title_select_apps">Select Apps</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_overlay">Overlay</string>
 </resources>
